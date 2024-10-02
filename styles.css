@@ -1,29 +1,38 @@
 /* This is a comment */
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body,
-h1,
-header {
+.heading-one,
+.header {
     margin: 0 auto;
 }
 
-header {
+.header {
     background-color: black;
-    height: 300px;
-    padding: 0 auto;
+    height: auto;
+    margin-bottom: 50px;
 }
 
-
-h1 {
+.heading-one {
     color: white;
     font-size: 48px;
     text-align: center;
     padding: 110px;
     }
 
+.heading-two {
+    margin-top: 100px;
+}
 
 .recipe-list {
     line-height: 200%;
@@ -32,4 +41,20 @@ h1 {
 
 .menu {
     padding: 20px 250px;
+}
+
+.img-line { 
+    margin: -100px auto;
+    width: 820px;
+    height: auto;
+}
+
+img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 25px;
+
 }
